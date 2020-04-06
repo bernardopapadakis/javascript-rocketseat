@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function retornaSexo(sexo) {
+            
+           /* if (sexo === 'M') {
+                return 'Masculino';
+            } else if (sexo === 'F') {
+                return ('Feminino');
+            } else {
+                return 'Indefinido';
+            } */
+
+            // ou 
+
+            switch (sexo) {
+                case 'M':
+                return 'Masculino';
+                case 'F': 
+                return 'Feminino';
+                default: 
+                return 'Indefinido';
+            }
+        }
+
+        var r = retornaSexo('M');
+        console.log(r)
+
+    </script>
+</body>
+</html>
